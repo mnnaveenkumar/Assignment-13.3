@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 13.3</title>
+</head>
+<body>
+    <script>
+        // Create a JSON object that holds data for below mentioned requirement
+        // 1. Should represents multiple user details
+        // 2. Every student have
+                // name,
+                // age,
+                // weight,
+                // height,
+                // friends  (array of names),
+                // college  ( another object with details like name, city, pincode)
+
+        var Student = {
+            "name"    : "Student Name",
+            "age"     : "24 years",
+            "weight"  : "20 kgs",
+            "height"  : "150 cms",
+            "friends" : [
+                        {"name":"first friend"},
+                        {"name":"second friend"},
+                        {"name":"third friend"}
+                        ],
+            "college" : {"name" : "Some College of Sciences",
+                        "city" : "Some City",
+                        "pincode" : "123456"
+                        }
+                };
+
+        console.log( JSON.stringify(Student) );
+    </script>
+</body>
+</html>
